@@ -1,0 +1,3 @@
+These are my more challenging learning projects. I started applying what I know in deeper ways and trying to solve real-world-style problems.
+
+They're not production-ready, but they represent the kind of dev I’m working to become.

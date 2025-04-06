@@ -1,0 +1,3 @@
+This folder is where I explore and improve my coding skills. I’ve split it into beginner, intermediate, and advanced so I can track my growth step by step.
+
+These projects are just for learning—they’re not perfect, but they help me experiment, make mistakes, and get better over time.
