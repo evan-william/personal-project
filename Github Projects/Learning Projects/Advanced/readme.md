@@ -1,5 +1,5 @@
 ## 🔴 Advanced Projects
 
-These are the projects that really pushed me. I started applying what I know in deeper, more practical ways — tackling real-world-style problems and thinking more like a developer.
+These are the projects that **challenged me the most**. I’ve applied what I know to solve more **complex, practical problems** and started thinking more like a developer.
 
-They’re not production-ready (yet), but they represent the kind of coder I’m becoming — curious, capable, and always learning.
+They’re not quite **production-ready** yet, but they show how I’m improving and growing my skills.
