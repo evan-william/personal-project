@@ -1,4 +1,7 @@
-📂 My Coding Journey
-This folder is where I learn by doing — one project at a time. I’ve split everything into beginner, intermediate, and advanced so I can look back and see how far I’ve come (and how far I still want to go).
+# 🧠 My Coding Journey
 
-None of these projects are perfect — and that’s the point. They’re experiments. Some are messy, some don’t work the way I expected, but every single one taught me something. This is my space to try things, make mistakes, and get better with every line of code.
+This folder is where I learn by building. I’ve split it into **Beginner**, **Intermediate**, and **Advanced** sections to track my progress step by step.
+
+These projects aren’t perfect — they’re meant for learning. Some are rough, some are unfinished, but each one helped me understand something new. It’s all part of the process.
+
+> Every mistake teaches me more. Every project teaches me something new.
