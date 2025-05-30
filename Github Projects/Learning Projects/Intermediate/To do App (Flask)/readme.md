@@ -78,7 +78,6 @@ http://127.0.0.1:5000/
 
 ---
 
-## 👤 Author
-
-Created by Evan William
+## 👨‍💻 Developer  
+Created by Evan William (2025)  
 Version: 1.0
