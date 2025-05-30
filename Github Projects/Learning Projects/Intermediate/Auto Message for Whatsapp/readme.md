@@ -9,7 +9,6 @@
 
 - 🎂 Birthday wishes  
 - ⏰ Reminders  
-- 🤝 Staying in touch with friends and family
 
 ---
 
