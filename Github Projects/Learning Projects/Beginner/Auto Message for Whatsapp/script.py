@@ -87,17 +87,7 @@ def send_message(message):
     print("✅ Message sent!")
 
 def calculate_wait_time(target_time):
-    now = datetime.datetime.now()
-    target = datetime.datetime.strptime(target_time, "%H:%M").replace(
-        year=now.year, month=now.month, day=now.day
-    )
-    
-    # If target time is earlier than now, assume it's for tomorrow
-    if target < now:
-        target += datetime.timedelta(days=1)
-    
-    wait_seconds = (target - now).total_seconds()
-    return wait_seconds
+    now = datetime.datetime
 
 def format_time_remaining(seconds):
     """Format seconds into a readable time string"""
@@ -108,59 +98,8 @@ def format_time_remaining(seconds):
     minutes, seconds = divmod(remainder, 60)
     return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
 
-def wait_until_time(target_time):
-    """Wait until target time with real-time countdown display"""
-    initial_wait = calculate_wait_time(target_time)
-    
-    if initial_wait <= 0:
-        print("⏰ Target time has already passed or is now. Sending immediately...")
-        return
-    
-    print(f"⏰ Waiting until {target_time}...")
-    
-    # Real-time countdown loop
-    while True:
-        current_wait = calculate_wait_time(target_time)
-        
-        if current_wait <= 0:
-            print(f"\r🚀 Time reached! Sending now...                    ")
-            break
-        
-        time_str = format_time_remaining(current_wait)
-        
-        # Different messages based on time remaining
-        if current_wait <= 10:
-            print(f"\r⏳ Sending in {int(current_wait)} seconds... ", end='', flush=True)
-        elif current_wait <= 60:
-            print(f"\r⏳ Time remaining: {time_str} (Less than a minute!) ", end='', flush=True)
-        elif current_wait <= 300:  # 5 minutes
-            print(f"\r⏰ Time remaining: {time_str} (Almost time!) ", end='', flush=True)
-        else:
-            print(f"\r⏰ Time remaining: {time_str} ", end='', flush=True)
-        
-        # Update every second
-        sleep(1)
-    
-    print()  # New line after countdown
-
-def start_messaging_bot(message, send_time, repeat_count):
-    dot_generate("🚀 Starting WhatsApp Auto Messenger")
-    
-    # Step 1: Open WhatsApp
-    if not open_whatsapp():
-        print("❌ Failed to open WhatsApp. Exiting...")
-        return
-    
-    # Step 2: Select contact
-    if not select_contact():
-        print("❌ Failed to find contact. Exiting...")
-        return
-    
-    # Step 3: Wait until target time ONCE (before sending any messages)
-    if send_time and send_time != "now":
-        wait_until_time(send_time)
-    
-    # Step 4: Send all messages after the wait time
+def send_msgs(message, repeat_count):
+    """Send all messages after countdown is done"""
     print(f"\n🚀 Starting to send {repeat_count} message(s)...")
     
     for i in range(repeat_count):
@@ -181,6 +120,66 @@ def start_messaging_bot(message, send_time, repeat_count):
             break
     
     print(f"\n🎉 All messages sent! Total: {repeat_count}")
+
+def wait_until_time(target_time):
+    """Wait until target time - ACTUALLY FIXED VERSION"""
+    now = datetime.datetime.now()
+    target = datetime.datetime.strptime(target_time, "%H:%M").replace(
+        year=now.year, month=now.month, day=now.day
+    )
+    
+    # If target time is earlier than now, assume it's for tomorrow
+    if target < now:
+        target += datetime.timedelta(days=1)
+    
+    print(f"⏰ Waiting until {target_time}...")
+    
+    # Real-time countdown loop - FIXED TO ACTUALLY STOP!
+    while True:
+        now = datetime.datetime.now()  # Get current time each loop
+        wait_seconds = (target - now).total_seconds()
+        
+        # BREAK IMMEDIATELY when time is reached!
+        if wait_seconds <= 0:
+            print(f"\r🚀 TIME REACHED! STOPPING TIMER NOW!                    ")
+            break
+        
+        time_str = format_time_remaining(wait_seconds)
+        
+        # Different messages based on time remaining
+        if wait_seconds <= 10:
+            print(f"\r⏳ Sending in {int(wait_seconds)} seconds... ", end='', flush=True)
+        elif wait_seconds <= 60:
+            print(f"\r⏳ Time remaining: {time_str} (Less than a minute!) ", end='', flush=True)
+        elif wait_seconds <= 300:  # 5 minutes
+            print(f"\r⏰ Time remaining: {time_str} (Almost time!) ", end='', flush=True)
+        else:
+            print(f"\r⏰ Time remaining: {time_str} ", end='', flush=True)
+        
+        # Update every second
+        sleep(1)
+    
+    print("\n✅ TIMER STOPPED! Ready to send messages!")
+    
+def start_messaging_bot(message, send_time, repeat_count):
+    dot_generate("🚀 Starting WhatsApp Auto Messenger")
+    
+    # Step 1: Open WhatsApp
+    if not open_whatsapp():
+        print("❌ Failed to open WhatsApp. Exiting...")
+        return
+    
+    # Step 2: Select contact
+    if not select_contact():
+        print("❌ Failed to find contact. Exiting...")
+        return
+    
+    # Step 3: Wait until target time (if specified)
+    if send_time and send_time != "now":
+        wait_until_time(send_time)
+    
+    # Step 4: Send all messages - MOVED HERE where variables exist!
+    send_msgs(message, repeat_count)
 
 def validate_time_format(time_str):
     if time_str.lower() == "now":
