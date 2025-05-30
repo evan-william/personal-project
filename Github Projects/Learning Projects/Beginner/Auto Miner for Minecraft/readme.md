@@ -100,5 +100,3 @@ python mine_script.py
 * Ensure no overlays (chat, tooltips, or menus) are blocking the lava or button.
 * For best results, **do not multitask** while the bot is running.
 * Test with a **short cycle** before letting it run longer.
-
----
