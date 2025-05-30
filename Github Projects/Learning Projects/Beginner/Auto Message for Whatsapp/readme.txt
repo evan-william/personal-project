@@ -76,13 +76,6 @@ For best results:
 - Don't use your computer while the script runs
 - Double-check your message before confirming!
 
-💡 Cool Use Cases:
-- Schedule birthday messages for friends
-- Send daily good morning/night texts
-- Remind family about important events
-- Share motivational quotes at specific times
-- Keep long-distance relationships strong with regular messages
-
 🔧 Troubleshooting:
 Can't find WhatsApp icon? → Check if it's visible on taskbar, retake screenshot
 Contact not found? → Make sure contact is clearly visible, no chat bubbles blocking
