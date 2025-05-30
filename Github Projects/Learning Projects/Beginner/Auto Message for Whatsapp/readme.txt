@@ -88,6 +88,4 @@ Can't find WhatsApp icon? → Check if it's visible on taskbar, retake screensho
 Contact not found? → Make sure contact is clearly visible, no chat bubbles blocking
 Messages not sending? → Verify WhatsApp is the active window
 
-Happy Messaging! 💬✨
-
-P.S. - Remember, the best messages come from the heart. Use this tool to stay connected, not to replace genuine conversation!
+Happy Messaging! 💬
