@@ -1,8 +1,12 @@
-# 👋 Welcome!
+# 👋 Welcome to My Project Hub
 
-This is my personal project hub — a place where I share all kinds of projects, from work-related stuff to GitHub experiments and everything in between.
+Hi there! I'm Evan — and this is my personal space where I build, experiment, and grow as a developer.
 
-Whether it’s small scripts, learning exercises, or full-blown applications, you’ll find a bit of everything here. This repo is a reflection of my ongoing journey as a developer and lifelong learner.
+---
 
-Feel free to explore, give feedback, or even collaborate. Thanks for stopping by!
+This repository is a **living collection** of my projects — from tiny automation scripts and learning experiments to full-fledged applications.  
+Some are practical, some are just for fun, but all of them represent my journey as a **lifelong learner and builder**.
 
+---
+
+Whether you're here to explore, give feedback, or collaborate — you're more than welcome.
