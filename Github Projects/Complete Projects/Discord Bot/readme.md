@@ -1,4 +1,4 @@
-# 🧠 Simple Discord Bot (Demo)
+# 🤖 Simple Discord Bot (Demo)
 
 This is a **simple Discord bot written in Python** built just to **showcase basic bot logic and message handling** using `discord.py`. The bot is already running and working successfully in my own server.
 
@@ -8,7 +8,6 @@ This is a **simple Discord bot written in Python** built just to **showcase basi
 
 - Responds to certain text messages like "halo" or "lempar dadu dong"
 - Sends private messages when the command starts with `?`
-- Chooses a random fallback response when input is unrecognized
 - Uses environment variables (`.env`) to keep the bot token safe
 - Prints user message info to the console for testing and debugging
 
