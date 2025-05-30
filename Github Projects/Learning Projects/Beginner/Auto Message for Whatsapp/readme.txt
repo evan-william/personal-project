@@ -4,7 +4,7 @@
 =======================================
 
 📜 Description:
-WhatsApp Auto Messenger is a smart automation tool that sends WhatsApp messages at your preferred time. Using advanced image recognition, it finds your contacts and sends personalized messages - perfect for birthday wishes, reminders, or staying in touch with friends and family!
+WhatsApp Auto Messenger is a smart automation tool that sends WhatsApp messages at your preferred time. Using simple image recognition, it finds your contacts and sends personalized messages - perfect for birthday wishes, reminders, or staying in touch with friends and family!
 
 ⚙️ Requirements:
 - Python 3.10+
