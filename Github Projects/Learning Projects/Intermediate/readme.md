@@ -1,5 +1,5 @@
 ## 🟠 Intermediate Projects
 
-Once I had the basics down, I started taking on projects that challenged me a bit more. These aren’t just “hello world” anymore — they helped me **connect ideas**, **solve real problems**, and **write cleaner, more thoughtful code**.
+These projects go **beyond the basics**. They helped me **connect different concepts**, **solve practical problems**, and write more **structured, maintainable code**.
 
-They’re not advanced (yet), but they definitely pushed me out of my comfort zone — and that’s where the real learning happens.
+They’re not advanced, but each one pushed me to **think a little deeper** and **step outside my comfort zone**.
