@@ -1,5 +1,5 @@
 ## 🌟 Polished Projects
 
-This folder is where I keep the more complete and polished work — the kind of projects I’d actually feel proud to show others.
+Here’s where I keep the projects I’ve taken the time to finish and refine — the ones I’d actually be happy to share with others.
 
-They reflect everything I’ve learned so far, and I plan to keep adding more as I grow. These aren’t just practice — they’re a snapshot of how far I’ve come.
+Each one reflects what I’ve learned so far, and I’m always looking to add more as I grow.  
