@@ -1,5 +1,5 @@
 ## 🌟 Polished Projects
 
-Here’s where I keep the projects I’ve taken the time to finish and refine — the ones I’d actually be happy to share with others.
+This folder contains the more complete and refined projects — the ones I’d be comfortable sharing or using as part of a portfolio.
 
-Each one reflects what I’ve learned so far, and I’m always looking to add more as I grow.  
+They reflect what I’ve learned so far, and I’ll keep adding more as I continue to grow as a developer.
