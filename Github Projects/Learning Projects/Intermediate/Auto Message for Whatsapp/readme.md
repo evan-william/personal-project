@@ -83,7 +83,7 @@ python whatsapp_messenger.py
    * Enter your message
    * Choose when to send (`"now"` or specific time like `"14:30"`)
    * Enter how many times to send the message
-5. Confirm and let the magic happen! ✨
+5. Confirm and wait! ✨
 
 ---
 
