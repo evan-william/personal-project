@@ -1,3 +1,0 @@
-After the basics, I started tackling slightly more complex problems. These projects helped me learn how to connect concepts and write cleaner, more thoughtful code.
-
-They're not advanced yet, but they definitely pushed me further than the beginner stuff.
