@@ -81,7 +81,7 @@ pip install yt_dlp inquirer colorama
 
 ---
 
-## 👤 Developer
-
-Created by Evan William (2025) 🚀🎉
+## 👨‍💻 Developer  
+Created by Evan William (2025)  
 Version: 1.0
+
