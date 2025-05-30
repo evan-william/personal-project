@@ -99,7 +99,6 @@ def format_time_remaining(seconds):
     return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
 
 def send_msgs(message, repeat_count):
-    """Send all messages after countdown is done"""
     print(f"\n🚀 Starting to send {repeat_count} message(s)...")
     
     for i in range(repeat_count):
@@ -122,7 +121,6 @@ def send_msgs(message, repeat_count):
     print(f"\n🎉 All messages sent! Total: {repeat_count}")
 
 def wait_until_time(target_time):
-    """Wait until target time - ACTUALLY FIXED VERSION"""
     now = datetime.datetime.now()
     target = datetime.datetime.strptime(target_time, "%H:%M").replace(
         year=now.year, month=now.month, day=now.day
