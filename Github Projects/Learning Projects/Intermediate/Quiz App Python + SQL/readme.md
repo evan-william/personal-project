@@ -113,6 +113,6 @@ Follow the menu to register, login, and play the quiz.
 
 ---
 
-## 👨‍💻 Author
-
-Made by Evan William as part of a personal learning project. 🎓
+## 👨‍💻 Developer  
+Created by Evan William (2025)  
+Version: 1.0
