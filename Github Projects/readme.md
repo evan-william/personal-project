@@ -19,4 +19,4 @@ They show the skills I’ve picked up, the progress I’ve made, and the things 
 ---
 
 Whether it’s a rough experiment or a finished build, every project always teaches me something new.  
-Thanks for stopping by — and feel free to poke around! 👨‍💻✨
+Thanks for stopping by — and feel free to poke around! ✨
