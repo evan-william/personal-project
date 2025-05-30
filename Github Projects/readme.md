@@ -9,4 +9,4 @@ Here’s where I experiment and grow. From beginner to advanced challenges, thes
 These are the projects I’ve refined and feel proud to share. They highlight what I’ve learned and show the progress I’m making as a developer.
 
 
-Every project, rough or polished, brings me closer to where I want to be. Thanks for stopping by and following along! 👨‍💻✨
+Every project, rough or polished, brings me closer to be better. Thanks for stopping by and following along! 👨‍💻✨
