@@ -126,3 +126,7 @@ python whatsapp_messenger.py
 | 📨 Messages not sending    | Check if WhatsApp is the **active** window and internet is stable |
 
 ---
+
+## 👨‍💻 Developer  
+Created by Evan William (2025)  
+Version: 1.0
