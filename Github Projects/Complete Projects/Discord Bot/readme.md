@@ -29,3 +29,9 @@ The code is intentionally kept short and clear, as it's part of a **personal pro
 ✔️ The bot is up and running on my server  
 ✔️ Code is clean, minimal, and working as intended  
 ✔️ Only built for demo purposes — not for production use
+
+---
+
+## 👨‍💻 Developer  
+Created by Evan William (2025)  
+Version: 1.0
