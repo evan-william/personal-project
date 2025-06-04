@@ -1,0 +1,1 @@
+from math import factorial; n = int(input("N: ")); print("Faktorial:", factorial(n))
