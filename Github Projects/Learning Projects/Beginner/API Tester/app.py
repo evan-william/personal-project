@@ -10,7 +10,7 @@ def ascii_title():
     return f.renderText("API-Test")
 
 def ascii_title2():
-    f = Figlet(font='slant')
+    f = Figlet(font='doom')
     return f.renderText("Response")
 
 def menu():
