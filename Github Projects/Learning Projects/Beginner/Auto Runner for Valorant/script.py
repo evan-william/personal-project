@@ -49,6 +49,7 @@ def login():
     time.sleep(2)
 
 if __name__ == "__main__":
+    # SCRIPT STEPS
     open_valorant()
     time.sleep(10)
     login()
