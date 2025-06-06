@@ -4,7 +4,7 @@ import subprocess
 import platform
 from pyfiglet import Figlet
 
-# MENU
+# MENU PART
 def ascii_title():
     f = Figlet(font='slant')
     return f.renderText("API-Test")
@@ -32,8 +32,8 @@ def clear_screen():
     else:
         subprocess.run("clear", shell=True)
 
-# MAIN
-def run_api():
+# MAIN PART
+def main():
     clear_screen()
     print(menu())
     url = input("Enter API URL: ").strip()
@@ -68,7 +68,7 @@ def run_api():
         print(response.text)
     
     input("\nPress Enter to Start Again...")
-    run_api()
+    main()
 
 if __name__ == "__main__":
     run_api()
