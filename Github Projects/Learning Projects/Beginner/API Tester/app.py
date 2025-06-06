@@ -16,7 +16,7 @@ def ascii_title2():
 def menu():
     return f"""
 {ascii_title()}
-                Welcome User! 
+                 Welcome User! 
                By: Evan William
 """
 
