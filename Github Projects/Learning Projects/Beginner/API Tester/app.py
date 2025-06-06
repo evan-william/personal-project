@@ -46,7 +46,7 @@ def main():
     if method == "GET":
         response = requests.get(url, headers=headers)
     elif method == "POST":
-        raw_data = input("Enter JSON data for POST (or leave empty): ").strip()
+        raw_data = input("Enter JSON data for POST (or leave it empty): ").strip()
         try:
             data = json.loads(raw_data) if raw_data else {}
         except json.JSONDecodeError:
