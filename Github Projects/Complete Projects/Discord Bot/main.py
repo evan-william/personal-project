@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from discord import Intents, Client, Message
 from responses import get_response
 
-# STEP 0: LOAD TOKEN FROM DOTENV
+# STEP 0: LOAD TOKEN FROM DOTENV (WONT BR SHOWN HERE ON GITHUB)
 load_dotenv()
 TOKEN: Final[str] = os.getenv('DISCORD_TOKEN')
 
