@@ -4,7 +4,7 @@ import subprocess
 import platform
 from pyfiglet import Figlet
 
-# MENU PART
+# MENU PARTS
 def ascii_title():
     f = Figlet(font='slant')
     return f.renderText("API-Test")
@@ -32,7 +32,7 @@ def clear_screen():
     else:
         subprocess.run("clear", shell=True)
 
-# MAIN PART
+# MAIN PARTS
 def main():
     clear_screen()
     print(menu())
