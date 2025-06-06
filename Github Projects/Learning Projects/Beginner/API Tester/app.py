@@ -36,7 +36,7 @@ def clear_screen():
 def main():
     clear_screen()
     print(menu())
-    url = input("Enter API URL: ").strip()
+    url = input("Enter API's URL: ").strip()
     method = input("Enter method (GET or POST): ").strip().upper()
 
     headers = {
