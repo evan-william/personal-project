@@ -10,7 +10,7 @@ TOKEN: Final[str] = os.getenv('DISCORD_TOKEN')
 
 # STEP 1: BOT SETUP
 intents: Intents = Intents.default()
-intents.message_content = True  # Ensure message content intent is enabled in bot settings on Discord Developer Portal too
+intents.message_content = True  # Ensure message content intent is enabled in bot settings on Discord Developer Portal too!!
 client: Client = Client(intents=intents)
 
 # STEP 2: MESSAGE FUNC
