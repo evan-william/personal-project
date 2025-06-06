@@ -30,7 +30,7 @@ async def send_message(message: Message, user_message: str) -> None:
 # STEP 3: HANDLING THE STARTUP FOR OUR BOT
 @client.event
 async def on_ready() -> None:
-    print(f'{client.user} sudah bangun! (versi:1.0)')
+    print(f'{client.user} sudah bangun!!! (versi:1.0)')
 
 # STEP 4: HANDLING INCOMING MESSAGES
 @client.event
