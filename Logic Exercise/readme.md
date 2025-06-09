@@ -15,4 +15,8 @@ This repo is where I practice problem-solving, explore different techniques, and
 ### 🎯 Goals
 - Improve my coding and thinking skills  
 - Learn new patterns and approaches  
-- Build consistency through regular practice
+- Build consistency through regular practice  
+
+---
+
+Feel free to explore and see how I think through problems. 🚀
