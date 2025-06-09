@@ -1,5 +1,4 @@
 # 💭 Quote Generator
-### Created by Evan William
 
 ---
 
