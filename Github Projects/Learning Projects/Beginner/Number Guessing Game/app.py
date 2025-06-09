@@ -1,10 +1,9 @@
 import random
-
 def get_hint(guess, target, difference):
     if guess == target:
         return "Perfect! You got it! 🎉"
     
-    # CALCULATE DIFFERENCES FOR HINTS
+    # CALCULATE DIFF
     if guess < target:
         if difference <= 2:
             return "Oh my gosh, you're SO close! Just a tiny bit higher!"
@@ -36,7 +35,7 @@ def play_game():
     print("🎮 Welcome to the Number Guessing Game! 🎮")
     print("=" * 50)
     
-    # ASK FOR RANGE
+    #  INPUT RANGE
     while True:
         try:
             max_num = int(input("What's the highest number I can pick? (minimum 10): "))
@@ -47,10 +46,21 @@ def play_game():
         except ValueError:
             print("That's not a number! Try again!")
     
-    #  GENERATE NUM
+    # GENERATE NUM
     secret_number = random.randint(1, max_num)
     attempts = 0
-    max_attempts = min(max_num // 3 + 5, 15)  # SCALE ATTEMPS
+    
+    # DIFFICULTY SCALING
+    import math
+    if max_num <= 10:
+        max_attempts = 3
+    elif max_num <= 100:
+        max_attempts = max(int(math.log2(max_num)) + 1, 4)
+    else:
+        max_attempts = int(math.log2(max_num)) + 8
+
+    max_attempts = min(max_attempts, 30)  # Maximum 30 attempts
+    max_attempts = max(max_attempts, 3)   # Minimum 3 attempts
     
     print(f"\nOkay, I've picked a number between 1 and {max_num}!")
     print(f"You have {max_attempts} attempts to guess it!")
@@ -58,7 +68,7 @@ def play_game():
     
     while attempts < max_attempts:
         try:
-            guess = int(input(f"\nAttempt #{attempts + 1}: What's your guess? "))
+            guess = int(input(f"Attempt #{attempts + 1}: What's your guess? "))
             attempts += 1
             
             if guess < 1 or guess > max_num:
