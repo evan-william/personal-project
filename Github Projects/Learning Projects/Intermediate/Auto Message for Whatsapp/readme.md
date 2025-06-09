@@ -1,7 +1,4 @@
 # 📩 WhatsApp Auto Messenger Bot  
-### Created by Evan William
-
----
 
 ## 📜 Description
 
