@@ -1,6 +1,6 @@
 import random
 
-def get_fun_hint(guess, target, difference):
+def get_hint(guess, target, difference):
     if guess == target:
         return "Perfect! You got it! 🎉"
     
@@ -58,7 +58,7 @@ def play_game():
     
     while attempts < max_attempts:
         try:
-            guess = int(input(f"Attempt #{attempts + 1}: What's your guess? "))
+            guess = int(input(f"\nAttempt #{attempts + 1}: What's your guess? "))
             attempts += 1
             
             if guess < 1 or guess > max_num:
@@ -67,7 +67,7 @@ def play_game():
                 continue
             
             difference = abs(guess - secret_number)
-            hint = get_fun_hint(guess, secret_number, difference)
+            hint = get_hint(guess, secret_number, difference)
             print(hint)
             
             if guess == secret_number:
