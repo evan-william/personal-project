@@ -74,7 +74,6 @@ pip install pygame pillow
 
 ---
 
-## 👨‍💻 Developer
-
-Created by Evan William (2025)
+## 👨‍💻 Developer  
+Created by Evan William (2025)  
 Version: 1.0
