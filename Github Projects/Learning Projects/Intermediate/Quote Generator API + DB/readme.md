@@ -1,7 +1,5 @@
 # 💭 Quote Generator
 
----
-
 ## 📜 Description
 
 A simple Python app that grabs random quotes from the internet and lets you save the good ones to a database. It's got some nice typewriter animations that make reading quotes feel more special.
