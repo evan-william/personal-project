@@ -1,7 +1,4 @@
 # ⛏️ Mine-Script - Auto Miner  
-### Created by Evan William
-
----
 
 ## 📜 Description
 
