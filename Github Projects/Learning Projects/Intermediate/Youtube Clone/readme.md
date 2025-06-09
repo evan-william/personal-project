@@ -60,4 +60,9 @@ To make the titles clickable, wrap them like this in `index.html`:
 * No JavaScript is used — this is a **static-only** front-end mockup.
 * Great for beginners to practice **HTML/CSS layout** and **component structuring**.
 
+---
+
+## 👨‍💻 Developer  
+Created by Evan William (2025)  
+Version: 1.0
 
