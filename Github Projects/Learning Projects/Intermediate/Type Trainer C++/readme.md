@@ -1,7 +1,4 @@
 # ⌨️ VTypeC Typing Trainer
-### Created by Evan William
-
----
 
 ## 📜 Description
 
