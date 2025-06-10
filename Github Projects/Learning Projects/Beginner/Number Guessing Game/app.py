@@ -9,6 +9,10 @@ def clear_screen():
     else:
         subprocess.run("clear", shell=True)
 
+def ascii_title2():
+    f = Figlet(font='slant')
+    return f.renderText("Thanks for playing!")
+
 def ascii_title():
     f = Figlet(font='slant')
     return f.renderText("Guess-IT")
@@ -19,6 +23,12 @@ def menu():
                 Welcome User! 
                By: Evan William
 """
+
+def endmenu():
+    return f"""
+{ascii_title2()}
+"""
+
 
 def get_hint(guess, target, difference):
     if guess == target:
@@ -244,7 +254,7 @@ def main():
                 break
             elif play_again in ['no', 'n']:
                 clear_screen()
-                print("Thanks for playing! See you next time!")
+                print(endmenu())
                 print("This Program is supported by my beloved ❤️")
                 return
             else:
