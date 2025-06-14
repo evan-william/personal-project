@@ -37,6 +37,8 @@ pip install mysql-connector-python inquirer google-generativeai
 └── query_handling.py (SQL queries)
 ```
 
+---
+
 ## ✅ Status
 
 ✔️ **Fully functional** with all difficulty modes working  
