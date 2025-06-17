@@ -9,7 +9,6 @@ This is an **advanced Tic Tac Toe game in Python** featuring an **unbeatable AI 
 - Uses **minimax algorithm** for perfect AI strategy that never loses
 - **3 difficulty levels**: Easy (beatable), Medium (challenging), Impossible (unbeatable)
 - **MySQL database** integration to track your wins and losses
-- **Animated console interface** with smooth text effects
 - **Smart move validation** and user-friendly menus
 
 ---
