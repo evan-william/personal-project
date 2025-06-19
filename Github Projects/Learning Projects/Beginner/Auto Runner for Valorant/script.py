@@ -3,7 +3,7 @@ import time
 import pyautogui
 
 # Path to Riot Client executable (Adjust Please!)
-VALORANT_PATH = # Fill This
+VALORANT_PATH = # Fill This For Path
 
 """
 For example:
