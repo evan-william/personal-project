@@ -26,7 +26,7 @@ def menu2():
                 The Result is Below!
 """
 
-# CLEARS SCREEN
+# CLEARS SCREENS
 def clear_screen():
     if platform.system() == "Windows":
         subprocess.run("cls", shell=True)
