@@ -1,6 +1,3 @@
-Of course. Here is the complete Markdown code for the `README.md` file.
-
-````markdown
 # 🏦 Vault - The Commitment Marketplace
 
 ## 📜 Description
@@ -114,4 +111,5 @@ Created by **Evan William** (2025)
 Version: 0.1.0 (Prototype)
 
 ```
+
 ```
