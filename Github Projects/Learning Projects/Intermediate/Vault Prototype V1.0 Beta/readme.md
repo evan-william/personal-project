@@ -105,10 +105,8 @@ python app.py
 
 -----
 
-## 👨‍💻 Developer
+## 👨‍💻 Developer  
+Created by Evan William (2025)  
+Version: 0.1.0 (Beta Prototype)
 
-Created by **Evan William** (2025)
-Version: 0.1.0 (Prototype)
-
-```
 
