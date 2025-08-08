@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Tic-Tac-Toe - You vs AI</h2>
+        <p>You are '{{ user_symbol }}', AI is '{{ ai_symbol }}' (Difficulty: {{ session.difficulty.capitalize() }})</p>
+        
+        <div class="board">
+            {% for i in range(9) %}
+                {% if board[i] == ' ' and not game_over %}
+                    <form action="{{ url_for('play') }}" method="post" class="cell-form">
+                        <input type="hidden" name="move" value="{{ i }}">
+                        <button type="submit" class="cell">{{ board[i] }}</button>
+                    </form>
+                {% else %}
+                    <div class="cell disabled">{{ board[i] }}</div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        {% if game_over %}
+            <p class="message">{{ message }}</p>
+            <br>
+            <a href="{{ url_for('reset_game') }}" class="btn">Play Again</a>
+            <a href="{{ url_for('index') }}" class="btn">Back to Menu</a>
+        {% else %}
+            <p class="message">{{ message }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

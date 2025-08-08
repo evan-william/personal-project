@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win Statistics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Win Statistics</h2>
+        {% if stats %}
+            <p>Total Games Played: {{ total_games }}</p>
+            <p>Your Wins: {{ stats.UserWin }}</p>
+            <p>AI Wins: {{ stats.AiWin }}</p>
+            <p>Your Win Rate: {{ user_percentage }}%</p>
+        {% else %}
+            <p>No games played yet.</p>
+        {% endif %}
+        <a href="{{ url_for('index') }}" class="btn">Back to Menu</a>
+    </div>
+</body>
+</html>
