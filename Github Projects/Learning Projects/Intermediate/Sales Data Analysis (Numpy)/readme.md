@@ -1,42 +1,28 @@
 # 📊 NumPy Sales Data Analysis
 
-This is a **comprehensive data analysis project** demonstrating **advanced NumPy operations** and statistical analysis techniques. The application generates realistic sales data and performs multi-dimensional analysis to showcase proficiency with NumPy's powerful array manipulation capabilities.
+A Python project showing how to work with NumPy for data analysis. I built this to practice multi-dimensional arrays and statistical operations on sales data.
 
 ---
 
-## ✨ What It Demonstrates
+## ✨ What it does
 
-- **Multi-dimensional array operations** with complex 3D data structures (365 days × 5 products × 3 regions)
-- **Advanced statistical analysis** including correlation matrices, performance scoring, and outlier detection
-- **Time-series data manipulation** with seasonal patterns and growth rate calculations
-- **Custom mathematical implementations** for correlation analysis and z-score normalization
-- **Real-world business analytics** patterns including quarterly breakdowns and regional comparisons
+This script creates fake sales data for a business with 5 products across 3 regions over one year. Then it runs various analyses to find patterns and insights.
+
+The data has seasonal trends (higher sales during holidays) and random variations to make it realistic.
 
 ---
 
-## 🔧 NumPy Techniques Showcased
+## 🔧 Key features
 
-### **Array Operations**
-- Multi-dimensional array creation and manipulation
-- Broadcasting operations for seasonal adjustments
-- Complex slicing and reshaping for temporal analysis
-- Axis-specific aggregations (`sum`, `mean`, `std` across different dimensions)
-
-### **Statistical Analysis**
-- Custom correlation matrix implementation
-- Z-score normalization and performance scoring
-- Outlier detection using standard deviation thresholds
-- Quartile and percentile calculations
-
-### **Data Transformations**
-- Reshaping arrays for quarterly and monthly analysis
-- Boolean indexing for filtering exceptional performance days
-- Array sorting and ranking operations
-- Mathematical operations on multi-dimensional datasets
+- Generates 3D array of sales data (365 days × 5 products × 3 regions)
+- Calculates daily, monthly, and quarterly totals
+- Finds correlations between different products
+- Scores regional performance on 0-100 scale
+- Identifies best/worst performing days and products
 
 ---
 
-## 🚀 How to Run
+## 🚀 How to run
 
 ### **Prerequisites**
 ```bash
@@ -48,7 +34,7 @@ pip install numpy
 python sales_analysis.py
 ```
 
-### **Sample Output Structure**
+### **Sample Output**
 ```
 NUMPY SALES DATA ANALYSIS PROJECT
 ==================================================
@@ -63,62 +49,43 @@ NUMPY SALES DATA ANALYSIS PROJECT
 
 ---
 
-## 📈 Analysis Features
+## 📈 NumPy skills demonstrated
 
-### **Data Generation**
-- Creates realistic 3D sales dataset with seasonal variations
-- Implements holiday boost patterns using trigonometric functions
-- Uses seeded random generation for reproducible results
-
-### **Performance Analytics**
-- Daily, quarterly, and monthly sales breakdowns
-- Product and regional performance comparisons
-- Growth rate calculations and trend analysis
-- Statistical outlier identification
-
-### **Correlation Analysis**
-- Manual implementation of Pearson correlation coefficient
-- Cross-product relationship mapping
-- Identification of most/least correlated product pairs
-
-### **Scoring System**
-- Z-score normalization for fair regional comparisons
-- 0-100 performance scale implementation
-- Top performer identification and ranking
+- Working with 3D arrays and complex indexing
+- Using axis parameters for different aggregation views
+- Array reshaping for time-based analysis
+- Broadcasting for applying seasonal patterns
+- Manual correlation matrix calculation
+- Z-score normalization and statistical operations
 
 ---
 
-## 🎯 Learning Objectives
+## 🎯 Why I made this
 
-This project demonstrates understanding of:
+I wanted to practice NumPy beyond basic tutorials. This project covers real data analysis scenarios like:
 
-- **NumPy fundamentals**: Array creation, indexing, and basic operations
-- **Advanced array manipulation**: Broadcasting, reshaping, and multi-axis operations
-- **Statistical computing**: Manual implementation of statistical formulas
-- **Data analysis workflows**: From generation to insights extraction
-- **Performance optimization**: Efficient vectorized operations over loops
-- **Real-world applications**: Business intelligence and data analytics patterns
+- Handling multi-dimensional business data
+- Time series analysis with seasonal patterns
+- Statistical calculations without using pandas
+- Performance optimization with vectorized operations
 
 ---
 
-## 📊 Key Technical Highlights
+## 📊 What you'll see
 
-- **3D Array Mastery**: Complex operations on (365, 5, 3) dimensional data
-- **Mathematical Implementation**: Hand-coded correlation matrix calculation
-- **Broadcasting Excellence**: Seasonal pattern application across all dimensions
-- **Aggregation Expertise**: Strategic use of axis parameters for different analytical views
-- **Statistical Rigor**: Proper normalization and scoring methodologies
+The script outputs 7 sections of analysis showing different NumPy techniques in action. Each section focuses on specific array operations and statistical methods.
 
 ---
 
 ## ✅ Status
 
-✔️ **Fully functional** with comprehensive NumPy operations  
-✔️ **Educational focus** on demonstrating array manipulation mastery  
-✔️ **Real-world applicable** business analytics patterns  
-✔️ **Well-documented** code with clear explanations and comments  
+✔️ Working with NumPy 1.24+  
+✔️ All calculations use pure NumPy (no pandas)  
+✔️ Commented code explaining each step  
+✔️ Realistic business data scenarios  
 
 ---
+
 ## 👨‍💻 Developer
 Created by Evan William (2025)  
 Version: 1.0
