@@ -2,10 +2,7 @@
 
 ## 📜 Description
 
-**Mine-Script** is an intelligent auto-mining bot for Minecraft that uses image detection and simulated keypresses to automate forward mining. It detects **lava danger** in real-time — when spotted, the bot will **retreat** automatically to avoid damage.
-
-Perfect for automating repetitive mining tasks in **single-player** or approved servers.
-
+**Mine-Script** is an auto-mining bot for Minecraft that uses image detection and simulated keypresses to automate forward mining. It detects **lava danger** in real-time, when spotted, the bot will **retreat** automatically to avoid damage.
 ---
 
 ## ⚙️ Requirements
@@ -88,6 +85,7 @@ python mine_script.py
 * **Do NOT use** on multiplayer servers that **prohibit bots or automation**.
 * Always use responsibly and ethically.
 * This tool is intended for personal use, learning, and experimentation.
+* This tool is just for fun only, so it will not work 100%
 
 ---
 
@@ -103,3 +101,4 @@ python mine_script.py
 ## 👨‍💻 Developer  
 Created by Evan William (2025)  
 Version: 1.0
+
