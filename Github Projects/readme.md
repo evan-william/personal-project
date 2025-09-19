@@ -12,7 +12,7 @@ They’re all about exploring new ideas, taking on challenges, and getting a bit
 
 ---
 
-### 🌟 Polished Projects  
+### 🌟 Complete Projects  
 These are the ones I’ve taken across the finish line.  
 They show the skills I’ve picked up, the progress I’ve made, and the things I’m proud to share.
 
