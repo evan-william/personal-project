@@ -1,8 +1,6 @@
-<div align="center">
+You're right, it does look awkward having the animated text above the section heading. It breaks the natural flow and makes the hierarchy confusing.
 
-![Advanced Projects](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=3000&pause=800&color=FF6B6B&center=true&vCenter=true&width=400&lines=Advanced+Projects;Complex+challenges;Growing+skills)
-
-</div>
+Here's a cleaner version:
 
 ## 🔴 Advanced Projects
 
@@ -15,3 +13,5 @@ They're not quite **production-ready** yet, but they show how I'm improving and 
 ![Challenge](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=4000&pause=1000&color=9B59B6&center=true&vCenter=true&width=450&lines=Tackling+complex+problems;Thinking+like+a+developer;Pushing+my+boundaries;Still+learning+and+growing)
 
 </div>
+
+The animated text works better as a supporting element after the main content, not as a replacement for or precursor to the actual heading.
