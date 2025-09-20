@@ -1,5 +1,3 @@
-You're right, that bottom line feels disconnected and awkward there. Here's a cleaner version:
-
 # Learning Projects
 
 <div align="center">
