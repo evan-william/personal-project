@@ -90,6 +90,13 @@ Plus some helpful charts showing:
 - Usage vs spending patterns
 - Segment comparisons
 
+## What I Found Interesting
+
+- The clustering algorithm naturally separates customers by value tier
+- Usage hours correlate pretty well with spending (makes sense)
+- Some customers need way more support than others
+- You can actually predict which customers might be worth focusing retention efforts on
+
 ## Project Structure
 
 ```
@@ -105,8 +112,8 @@ company_analytics.py
 ## Things I'd Improve
 
 - Try other clustering algorithms 
+- Implement churn prediction
 - Build a simple web interface
-- Add statistical significance testing
 
 ## Configuration
 
@@ -128,7 +135,7 @@ enterprise_avg_spend = 2500
 **Evan William** 
 Version 1.0 (2025)
 
-Built this to practice customer analytics and machine learning concepts. It's been a great way to understand how clustering algorithms work and how to apply them to real business problems. The synthetic data approach let me experiment freely without worrying about privacy issues.
+Built this to practice customer analytics and machine learning concepts. It's been a great way to understand how clustering algorithms work and how to apply them to real business problems.
 
 Still learning, so if you spot any issues or have suggestions for improvement, I'd appreciate the feedback!
 
