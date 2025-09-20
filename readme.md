@@ -2,7 +2,7 @@
   <img src="https://github.com/evan-william/evan-william/blob/main/forest33.gif" alt="Header" width="100%"/>
 </div>
 
-# Hey there!
+# 👋 Hey there!
 
 I'm **Evan**, and this is my coding journey.
 
@@ -14,7 +14,7 @@ Everything from quick automation scripts to full-blown apps ends up here. Some s
 
 <div align="center">
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=800&color=58A6FF&center=true&vCenter=true&width=500&lines=Learning+new+things+every+day;Building+cool+stuff;Breaking+things%2C+then+fixing+them;Always+experimenting)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=800&color=58A6FF&center=true&vCenter=true&width=500&lines=Full-stack+developer;Problem+solver;Always+learning+new+technologies;Building+innovative+solutions)
 
 **building** • **learning** • **creating** • **exploring**
 
