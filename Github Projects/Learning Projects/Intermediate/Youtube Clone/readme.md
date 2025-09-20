@@ -1,68 +1,117 @@
-# 📺 YouTube Front Page Clone
+# YouTube Front Page Clone
 
-This is a simple front-end clone of the **YouTube homepage**, built using only **HTML and CSS**. It replicates the layout and styling of YouTube’s front page, including the header, sidebar, and video grid. Each video title is clickable and can be extended to link to individual video pages.
+A static front-end recreation of the YouTube homepage built with HTML and CSS to practice layout design and responsive web development.
 
-## 🔧 Features
+## What It Does
 
-* ✅ Responsive YouTube-style header with logo, search bar, and user icons
-* ✅ Sidebar with YouTube navigation icons and labels
-* ✅ Grid layout for video thumbnails, similar to YouTube’s real layout
-* ✅ Clickable video titles (can be extended to redirect to video pages)
-* ✅ CSS-based tooltips on icons
-* ✅ Fully responsive layout with simple yet modern design
+This is a pixel-perfect clone of YouTube's main interface that I built to practice advanced CSS layout techniques. The project replicates the header navigation, sidebar menu, and video grid system using only HTML and CSS without any JavaScript functionality.
 
-## 📂 Project Structure
+Built this to understand modern web layout systems like CSS Grid and Flexbox, and to practice component-based styling architecture.
+
+## Features
+
+* YouTube-style header with logo, search bar, and user icons
+* Collapsible sidebar navigation with icon tooltips
+* Responsive video grid layout matching YouTube's design
+* Clickable video titles ready for navigation integration
+* CSS-only tooltips and hover effects
+* Mobile-responsive design patterns
+* Modular CSS architecture with separated concerns
+
+## Project Structure
 
 ```
 youtube-clone/
-│
-├── index.html                  # Main homepage structure
+├── index.html              # Main page structure
 ├── styles/
-│   ├── general.css             # Global styles (body, font, padding)
-│   ├── header.css              # Styles for the top header section
-│   ├── video.css               # Styles for video cards
-│   └── sidebar.css            # Styles for the sidebar navigation
-│
-├── thumbnails/                # Contains video thumbnail images
-├── channel-pictures/         # Profile pictures for video creators
-├── icons/                     # SVG icons for YouTube-like interface
-└── README.md                  # This file
+│   ├── general.css         # Global styles and resets
+│   ├── header.css          # Top navigation styling
+│   ├── sidebar.css         # Side navigation menu
+│   └── video.css           # Video card components
+├── thumbnails/             # Video thumbnail images
+├── channel-pictures/       # Channel profile images
+├── icons/                  # SVG icons for interface
+└── README.md              # This file
 ```
 
-## 📝 How to Use
+## Requirements
 
-1. Clone or download this repository.
-2. Make sure all files are in the correct folders (as shown above).
-3. Open `index.html` in your browser.
-4. Hover over icons to see tooltips.
-5. Click on video titles (currently can be linked to `video.html` or similar pages manually).
+* Modern web browser with CSS Grid support
+* No server requirements - runs as static files
+* Internet connection for Google Fonts (Roboto)
 
-## 🔗 Example of Clickable Title
+## How to Run
 
-To make the titles clickable, wrap them like this in `index.html`:
+Open the project in any web browser:
+
+```bash
+# Simply open index.html in your browser
+open index.html
+```
+
+Or serve locally if preferred:
+
+```bash
+# Using Python
+python -m http.server 8000
+
+# Using Node.js
+npx serve .
+```
+
+## How It Works
+
+The layout uses CSS Grid for the main page structure and Flexbox for component alignment. The design is built with a mobile-first approach and uses media queries for responsive breakpoints. Each component is styled in separate CSS files for maintainability.
+
+The video grid automatically adjusts based on screen size, and the sidebar can be extended to include collapse functionality with minimal JavaScript additions.
+
+## What I Learned
+
+* CSS Grid and Flexbox layout systems
+* Responsive design principles and mobile-first development
+* Component-based CSS architecture
+* Advanced CSS selectors and pseudo-elements
+* Image optimization and aspect ratio maintenance
+* Modern CSS features like custom properties
+* Cross-browser compatibility considerations
+
+## Extending the Project
+
+To add video page navigation:
 
 ```html
 <a href="video.html">
-  <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+  <p class="video-title">Video Title Here</p>
 </a>
 ```
 
-> 📌 You can create a separate `video.html` file to simulate a video watch page.
+Create additional pages like `video.html` for a complete YouTube clone experience.
 
-## 🚀 Technologies Used
+## Known Issues
 
-* HTML5
-* CSS3 (Flexbox & Grid)
-* Google Fonts (Roboto)
+* Static content only - no dynamic video loading
+* Search functionality requires JavaScript implementation
+* No user authentication or personalization features
+* Limited to desktop and tablet layouts
+* Images need to be manually added to directories
 
-## 📌 Notes
+## Possible Improvements
 
-* No JavaScript is used — this is a **static-only** front-end mockup.
-* Great for beginners to practice **HTML/CSS layout** and **component structuring**.
+Could add:
+* JavaScript for interactive sidebar collapse
+* Search functionality with filtering
+* Video player page templates
+* Dark mode theme toggle
+* Infinite scroll simulation
+* Local storage for user preferences
+* Animation transitions for better UX
 
----
+## Author
 
-## 👨‍💻 Developer  
-Created by Evan William (2025)  
-Version: 1.0
+**Evan William** - Version 1.0 (2025)
 
+Created this to master CSS layout techniques and understand how complex web interfaces are structured. It was excellent practice for component-based styling and responsive design patterns.
+
+This was my first attempt at recreating a major website's interface, focusing on pixel-perfect accuracy and clean code organization.
+
+*Learning project - demonstrates modern CSS layout techniques through YouTube interface recreation.*
