@@ -1,87 +1,101 @@
-# 🎥 Evan's YouTube Downloader 🎥
+# Evan's YouTube Downloader
 
-## 🚀 Overview
+A command-line YouTube video and audio downloader built with Python, featuring an interactive interface for selecting download formats and quality options.
 
-Evan's YouTube Downloader is a friendly command-line tool built with Python, `yt_dlp`, and `inquirer`. It lets you easily download YouTube videos or extract audio in MP3 format with a clean, colorful interface and useful options like resolution selection for videos.
+## What It Does
 
-Perfect for quickly grabbing your favorite content directly to your computer with minimal hassle! 💻✨
+This is a YouTube downloader tool I built to practice working with external APIs and command-line interfaces. The program lets users download YouTube videos in various resolutions or extract audio as MP3 files through a colorful, menu-driven interface.
 
----
+Built this to learn how to integrate third-party libraries like yt-dlp, create interactive CLI applications, and handle file downloads with progress feedback.
 
-## 🔥 Features
+## Features
 
-* 🎬 **Video Download**: Choose your preferred video resolution before downloading
-* 🎵 **Audio Download**: Extract audio and save as MP3
-* 🎨 **Colorful CLI**: Nice colored ASCII art and prompts using `colorama`
-* 📂 **Custom Download Folder**: Specify where to save your files
-* 🛑 **Exit Option**: Clean exit from the program
-* 🤖 **Smart Format Filtering**: Only valid video+audio formats are listed for video downloads
+* Download YouTube videos with resolution selection
+* Extract audio and convert to MP3 format  
+* Interactive command-line menus with colorful interface
+* Custom download folder specification
+* Smart format filtering for video+audio combinations
+* ASCII art banner and colored terminal output
+* Clean error handling and user feedback
 
----
+## Project Structure
 
-## 📋 Requirements
+```
+youtube-downloader/
+├── downloader.py       # Main application script
+└── README.md          # This file
+```
+
+## Requirements
 
 * Python 3.x
-* [yt\_dlp](https://github.com/yt-dlp/yt-dlp) (for video/audio downloading)
-* [inquirer](https://github.com/magmax/python-inquirer) (for CLI menus)
-* [colorama](https://pypi.org/project/colorama/) (for colored terminal output)
+* Required packages:
+  - yt-dlp (YouTube download functionality)
+  - inquirer (interactive CLI menus)
+  - colorama (colored terminal output)
 
-Install dependencies with:
+Install dependencies:
 
 ```bash
 pip install yt_dlp inquirer colorama
 ```
 
----
+## How to Run
 
-## 💻 How to Use
+Execute the downloader script:
 
-1. Run the script:
+```bash
+python downloader.py
+```
 
-   ```bash
-   python your_script_name.py
-   ```
+Follow the interactive prompts to:
+1. Choose between video or audio download
+2. Enter the YouTube URL
+3. Specify download location
+4. Select video resolution (for video downloads)
+5. Wait for download completion
 
-2. Choose what to download:
+## How It Works
 
-   * 📺 Video (choose resolution)
-   * 🎵 Audio (MP3)
-   * ❌ Exit
+The application uses yt-dlp to interface with YouTube's API and fetch available video formats. It presents filtered options through inquirer's interactive menus, allowing users to select their preferred quality before downloading. Audio downloads automatically extract the best available audio stream and convert to MP3.
 
-3. Enter the YouTube URL when prompted.
+The colorama library provides terminal colors for a more engaging user experience with ASCII art and colored status messages.
 
-4. Specify the download folder or press Enter to use the current directory.
+## What I Learned
 
-5. For video downloads, select your desired resolution from the list.
+* Working with external Python libraries and APIs
+* Creating interactive command-line interfaces
+* File handling and download progress management
+* Error handling for network operations
+* Terminal styling and user experience design
+* Format filtering and media processing concepts
+* Menu-driven application architecture
 
-6. Wait for the download to complete.
+## Known Issues
 
-7. Press Enter to return to the main menu or exit.
+* No download progress bar implementation
+* Limited to single video downloads (no playlists)
+* Basic error handling for invalid URLs
+* Depends on yt-dlp's YouTube compatibility
+* No pause/resume download functionality
 
----
+## Possible Improvements
 
-## 🎨 How It Works
+Could add:
+* Real-time download progress indicators
+* Batch playlist download support
+* Subtitle download options
+* Support for other video platforms
+* Download history and resume capabilities
+* Configuration file for default settings
+* GUI version with tkinter or PyQt
 
-* The script shows a colorful ASCII art banner and a user-friendly menu.
-* Uses `yt_dlp` to fetch available video formats and download media.
-* Filters video formats to only show those with both audio and video for download.
-* Audio downloads grab the best available audio stream and save it as MP3.
-* Uses `inquirer` for neat, interactive CLI menus.
-* Colored output powered by `colorama` for a fun terminal experience!
+## Author
 
----
+**Evan William** - Version 1.0 (2025)
 
-## 🚧 Future Improvements
+Created this to learn how to build practical command-line tools that interact with web services. It was good practice for handling user input, managing downloads, and creating polished CLI experiences.
 
-* Add progress bar for downloads
-* Support playlist downloads
-* Add pause/resume functionality
-* Option to download subtitles
-* Support other platforms beyond YouTube
+This was my first project working with video download libraries and interactive terminal interfaces.
 
----
-
-## 👨‍💻 Developer  
-Created by Evan William (2025)  
-Version: 1.0
-
+*Learning project - demonstrates CLI application development and third-party API integration for media downloads.*
