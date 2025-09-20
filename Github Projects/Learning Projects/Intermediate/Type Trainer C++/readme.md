@@ -1,105 +1,122 @@
-# ⌨️ VTypeC Typing Trainer
+# VTypeC Typing Trainer
 
-## 📜 Description
+A command-line typing trainer application built in C++ with typewriter animations and colorful interface for improving typing speed and accuracy.
 
-A sleek command-line typing trainer built in C++ that helps you level up your typing speed and accuracy. Features a beautiful ASCII art interface with colorful text and smooth typewriter animations.
+## What It Does
 
-Perfect for programmers, students, or anyone who wants to improve their typing skills with a mix of everyday words and tech terminology!
+This is a terminal-based typing trainer I built to practice C++ programming while creating something useful for improving typing skills. The program displays words with a typewriter animation effect, tracks your typing speed and accuracy, and provides immediate feedback on your performance.
 
----
+Built this to learn multi-file C++ project organization, cross-platform development, and terminal UI programming with ANSI color codes.
 
-## ⚙️ Requirements
+## Features
 
-- **C++11** or newer compiler (g++, clang++, MSVC)
-- Terminal with ANSI color support
-- These files need to be compiled together:
-  - `main.cpp`
-  - `clearscreen.cpp` 
-  - `mistake_counter.cpp`
-  - `ui.cpp`
-  - `word_generator.cpp`
+* Dynamic word generation from 400+ word dictionary
+* Real-time typewriter animation effects
+* Typing speed calculation (words per second)
+* Accuracy tracking with mistake analysis
+* Cross-platform screen clearing functionality
+* Colorful ANSI terminal interface
+* Customizable practice session length
+* Mixed vocabulary including programming terms
 
----
+## Project Structure
 
-## 🔨 How To Build
+```
+VTypeC/
+├── main.cpp              # Main program logic and menu system
+├── clearscreen.cpp       # Cross-platform screen clearing
+├── clearscreen.h         # Screen clearing header
+├── mistake_counter.cpp   # Speed and accuracy calculations
+├── mistake_counter.h     # Mistake tracking header
+├── ui.cpp               # Typewriter animation implementation
+├── ui.h                 # UI effects header
+├── word_generator.cpp   # Random word selection logic
+├── word_generator.h     # Word generation header
+└── README.md           # This file
+```
 
-**On Linux/Mac:**
+## Requirements
+
+* C++11 compatible compiler (g++, clang++, MSVC)
+* Terminal with ANSI color support
+* Standard C++ libraries
+
+## How to Build
+
+Compile all source files together:
+
+**Linux/Mac:**
 ```bash
 g++ -std=c++11 *.cpp -o main
 ```
 
-**On Windows (with MinGW):**
+**Windows with MinGW:**
 ```bash
 g++ -std=c++11 *.cpp -o main.exe
 ```
 
-**Or compile individually:**
+**Manual compilation:**
 ```bash
 g++ -std=c++11 main.cpp clearscreen.cpp mistake_counter.cpp ui.cpp word_generator.cpp -o main
 ```
 
----
+## How to Run
 
-## ▶️ How To Run
+Execute the compiled program:
 
-1. Compile the program (see above)
-2. Run it:
 ```bash
 ./main       # Linux/Mac
-main.exe      # Windows
-```
-3. Choose how many words to practice (10-100)
-4. Watch the words appear with typewriter effect
-5. Type them as fast and accurately as you can!
-
----
-
-## 🎯 What It Does
-
-- **Dynamic Word Generation** - 400+ words from basic vocabulary to programming terms
-- **Real-time Typewriter Animation** - Words appear letter by letter (just like old typewriters!)
-- **Accuracy Analysis** - Shows exactly what you typed vs. what was expected
-- **Speed Tracking** - Calculates your words per second
-- **Cross-Platform** - Works on Windows, Mac, and Linux
-- **Colorful Interface** - ANSI colors make everything look awesome
-
----
-
-## 🧰 Project Structure
-
-```
-VTypeC/
-├── main.cpp              # Main program logic & UI
-├── clearscreen.cpp/.h    # Cross-platform screen clearing
-├── mistake_counter.cpp/.h # Accuracy & speed calculations  
-├── ui.cpp/.h             # Typewriter animation effects
-├── word_generator.cpp/.h  # Random word selection
-└── README.md             # You are here!
+main.exe     # Windows
 ```
 
----
+Choose your practice session length and start typing the words as they appear with the typewriter effect.
 
-## 👍 Cool Features
+## How It Works
 
-The **typewriter effect** is the star of the show - words appear character by character with customizable delay, making practice sessions feel engaging rather than boring.
+The program consists of several modules:
+* `main.cpp` handles the overall program flow and user interface
+* `word_generator` manages the word dictionary and random selection
+* `ui` implements the typewriter animation using ANSI escape sequences
+* `mistake_counter` calculates typing statistics and accuracy metrics
+* `clearscreen` provides cross-platform terminal clearing functionality
 
-**Smart accuracy tracking** compares word-by-word instead of character-by-character, so small typos don't completely wreck your score.
+Each word appears with a typewriter animation, and the program tracks your input in real-time to calculate speed and accuracy.
 
-**Massive word dictionary** includes everything from "cat" and "dog" to "asynchronous" and "multithreading" - perfect for building both general and technical typing skills.
+## What I Learned
 
----
+* Multi-file C++ project organization and header files
+* Cross-platform programming techniques
+* ANSI escape sequences for terminal colors and effects
+* String manipulation and comparison algorithms
+* Timing functions for animation and speed calculation
+* Memory management with vectors and strings
+* Code modularization and separation of concerns
 
-## 🧰 If Something Breaks
+## Known Issues
 
-| Problem | Fix |
-|---------|-----|
-| Colors don't show | Your terminal might not support ANSI colors |
-| Won't compile | Make sure you're using C++11 or newer |
-| Screen doesn't clear | Terminal compatibility issue - try different terminal |
-| Animation too fast/slow | Modify the delay in `typeText()` function |
+* ANSI colors may not work on all terminal emulators
+* Timing accuracy depends on system timer resolution
+* No persistent statistics storage
+* Basic word comparison algorithm
+* Limited customization options
 
----
+## Possible Improvements
 
-## 👨‍💻 Developer  
-Created by Evan William (2025)  
-Version: 1.0
+Could add:
+* Persistent user statistics and progress tracking
+* Different difficulty levels and word categories
+* Configurable animation speed and colors
+* Support for custom word lists
+* More detailed accuracy analysis
+* Leaderboard functionality
+* Better cross-platform terminal handling
+
+## Author
+
+**Evan William** - Version 1.0 (2025)
+
+Created this as my first multi-file C++ project to practice object-oriented programming and learn about terminal UI development. It was helpful for understanding how to organize larger C++ programs and work with system-specific functionality.
+
+First time implementing animations in a terminal application, so the code focuses on core functionality while keeping it clean.
+
+*Learning project - demonstrates C++ programming concepts in a practical typing trainer application.*
