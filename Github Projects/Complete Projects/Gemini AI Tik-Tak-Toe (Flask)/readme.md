@@ -1,82 +1,126 @@
-# 🎮 AI Tic Tac Toe - Flask Gemini Edition
+# AI Tic Tac Toe - Flask Gemini Edition
 
-This is an **advanced Tic Tac Toe web application in Flask** featuring an **unbeatable AI opponent** using the minimax algorithm. The AI is smart enough to never lose - you can only win on Easy mode or achieve ties on Impossible!
+A web-based Tic Tac Toe game with an unbeatable AI opponent built using Flask, featuring the minimax algorithm and MySQL database integration for game statistics.
 
----
+## What It Does
 
-## ✨ What It Does
+This is the web version of my AI Tic Tac Toe game, rebuilt with Flask to provide a browser-based gaming experience. Players can challenge an AI opponent that uses the minimax algorithm to make optimal moves, with three difficulty levels ranging from beatable to mathematically impossible to defeat.
 
-- Uses **minimax algorithm** for perfect AI strategy that never loses
-- **3 difficulty levels**: Easy (beatable), Medium (challenging), Impossible (unbeatable)
-- **MySQL database** integration to track your wins and losses
-- **Web-based interface** with responsive design and smooth gameplay
-- **Smart move validation** and user-friendly web interface
-- **Real-time game statistics** displayed in your browser
+Built this to learn web development with Flask, practice full-stack development, and understand how to migrate command-line applications to web interfaces.
 
----
+## Features
 
-## 🚀 How to Run
+* Web-based Tic Tac Toe with responsive click-to-play interface
+* Minimax algorithm AI that never loses on highest difficulty
+* Three difficulty levels: Easy, Medium, and Impossible
+* MySQL database integration for persistent game statistics
+* Session management for maintaining game state
+* Real-time move validation and game outcome detection
+* Clean web interface with custom CSS styling
+* Google Gemini API integration for enhanced features
 
-### **Prerequisites**
+## Project Structure
+
+```
+flask-tic-tac-toe/
+├── app.py                  # Main Flask application
+├── templates/
+│   ├── auth.html          # Database and API authentication
+│   ├── index.html         # Main menu and navigation
+│   ├── setup.html         # Game configuration page
+│   ├── play.html          # Interactive game board
+│   └── win_stats.html     # Statistics and performance tracking
+├── static/
+│   └── style.css          # Custom styling and responsive design
+└── README.md             # This file
+```
+
+## Requirements
+
+* Python 3.8+
+* MySQL server
+* Google Gemini API key
+* Required packages:
+  - Flask
+  - mysql-connector-python
+  - google-generativeai
+  - requests
+
+Install dependencies:
+
 ```bash
 pip install flask mysql-connector-python google-generativeai requests
 ```
 
-### **Setup**
-1. Make sure you have **MySQL** installed and running
-2. Get a **Gemini API key** from Google AI Studio
-3. Run the Flask app: `python app.py`
-4. Open your browser and go to `http://localhost:5000`
-5. Enter your database credentials and Gemini API key
-6. Start playing!
+## Setup
 
-### **File Structure**
-```
-📁 Your Flask Project
-├── app.py (main Flask application)
-├── templates/
-│   ├── auth.html (authentication page)
-│   ├── index.html (main menu)
-│   ├── setup.html (game setup)
-│   ├── play.html (game board)
-│   └── win_stats.html (statistics page)
-└── static/
-    └── style.css (styling)
+1. Ensure MySQL server is running locally
+2. Obtain a Google Gemini API key from Google AI Studio
+3. Start the Flask application
+4. Configure database credentials and API key through the web interface
+
+## How to Run
+
+Start the Flask development server:
+
+```bash
+python app.py
 ```
 
----
+Open your browser and navigate to:
+```
+http://localhost:5000
+```
 
-## 🌐 Features
+Complete the authentication setup and start playing against the AI.
 
-✔️ **Web-based gameplay** with intuitive click-to-play interface  
-✔️ **Real-time AI moves** with visual feedback  
-✔️ **Database integration** successfully tracking game statistics  
-✔️ **Unbeatable AI** implemented using minimax algorithm  
-✔️ **Responsive design** works on desktop and mobile  
-✔️ **Session management** maintains game state between moves  
+## How It Works
 
----
+The Flask application manages game state through session storage, handling player moves and AI responses in real-time. The minimax algorithm evaluates all possible game outcomes to determine the optimal AI move, while the web interface provides immediate visual feedback.
 
-## 🎯 How to Play
+MySQL database stores game results and statistics, allowing players to track their performance across multiple sessions.
 
-1. **Authentication**: Enter your MySQL credentials and Gemini API key
-2. **Game Setup**: Choose difficulty level and your symbol (X or O)
-3. **Play**: Click on empty cells to make your move
-4. **Win Tracking**: View your win/loss statistics anytime
-5. **Play Again**: Reset and start new games with different settings
+## What I Learned
 
----
+* Flask web framework architecture and routing
+* Template rendering with Jinja2 for dynamic content
+* Session management for maintaining game state
+* Integrating AI algorithms into web applications
+* Database operations in web contexts
+* Responsive web design with CSS
+* Full-stack development workflow from backend to frontend
 
-## ⚙️ Configuration
+## Game Difficulty Levels
 
-The app requires:
-- **MySQL database** for game statistics storage
-- **Gemini API key** for AI integration (though currently used for authentication only)
-- **Flask secret key** (change in production!)
+* **Easy**: AI makes suboptimal moves, allowing player victories
+* **Medium**: AI uses limited-depth minimax search
+* **Impossible**: Full minimax implementation - unbeatable AI
 
----
+## Known Issues
 
-## 👨‍💻 Developer
+* API key and database credentials entered through web form
+* Session storage limited to browser session duration
+* Basic error handling for database connection issues
+* No user authentication or multi-player support
+* Limited to single-game sessions
 
-Created by Evan William (2025)  
-Version: 2.0 - Flask Web Edition
+## Possible Improvements
+
+Could add:
+* User registration and login system
+* Multiplayer online gameplay
+* Tournament mode with multiple rounds
+* Advanced statistics and analytics dashboard
+* Mobile app version using Flask API
+* Real-time multiplayer with WebSocket integration
+* Different board sizes and game variants
+
+## Author
+
+**Evan William** - Version 2.0 (2025)
+
+Created this web version to learn Flask development and understand how to build interactive web applications. It was great practice for combining AI algorithms with web technologies and creating engaging user interfaces.
+
+This project helped me transition from command-line applications to full web development, focusing on user experience and responsive design.
+
+*Learning project - demonstrates Flask web development and AI algorithm integration in browser-based gaming applications.*
