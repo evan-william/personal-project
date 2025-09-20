@@ -1,8 +1,8 @@
+# 👋 Hey there!
+
 <div align="center">
   <img src="https://github.com/evan-william/evan-william/blob/main/forest33.gif" alt="Header" width="100%"/>
 </div>
-
-# 👋 Hey there!
 
 I'm **Evan**, and this is my coding journey.
 
