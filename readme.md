@@ -1,15 +1,25 @@
 # 👋 Hey there!
 
-I'm **Evan**, and this is where I keep all my coding projects and experiments.
+I'm **Evan**, and this is my coding playground.
 
-From simple automation scripts to full applications - everything I build while learning and growing as a developer lives here. Some projects are practical tools, others are just me having fun with code.
+Everything from quick automation scripts to full-blown apps ends up here. Some stuff solves real problems, some is just me messing around with new tech I want to learn.
 
-**Feel free to explore, give feedback, or just see what I've been working on!**
+**Jump in, take a look around, let me know what you think.**
 
 ---
 
+<div align="center">
+
+![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=800&color=58A6FF&center=true&vCenter=true&width=500&lines=Learning+new+things+every+day;Building+cool+stuff;Breaking+things%2C+then+fixing+them;Always+experimenting)
+
+</div>
+
 ```
-🎯 Learning experiments  •  💡 Practical tools  •  🎮 Fun projects  •  🚀 Bigger ideas
+🎯 experiments   •   💡 tools   •   🎮 games   •   🚀 ideas
 ```
 
-Thanks for dropping by! 🚀
+<div align="center">
+
+**Thanks for stopping by!** ⚡
+
+</div>
