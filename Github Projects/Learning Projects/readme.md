@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Progress](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=3000&pause=2000&color=58A6FF&center=true&vCenter=true&width=400&lines=Beginner+→+Intermediate+→+Advanced;Beginner+→+Intermediate+→+Advanced;Beginner+→+Intermediate+→+Advanced)
+![Progress](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=0&pause=0&color=58A6FF&center=true&vCenter=true&width=400&lines=Beginner+→+Intermediate+→+Advanced)
 
 </div>
 
