@@ -1,66 +1,52 @@
-# 🧠 Quiz Game with Login System (Python + MySQL)
+# Quiz Game with Login System
 
-This is a simple CLI-based Quiz Game built using Python and MySQL. Users can register, log in, and play a 10-question multiple-choice quiz. The app tracks and updates the user’s high score.
+A command-line quiz game built with Python and MySQL to practice database integration and user authentication concepts.
 
----
+## What It Does
 
-## 📂 Project Structure
+This is a simple terminal-based quiz application I made to learn how to connect Python programs to databases. Users can register accounts, log in, and take a 10-question multiple-choice quiz. The program stores user data and high scores in a MySQL database.
+
+Built this to practice working with databases, user authentication, and organizing a multi-file Python project.
+
+## Features
+
+- User registration and login system
+- 10-question multiple-choice quiz with randomized order
+- Score tracking and high score storage
+- MySQL database integration
+- Basic CLI interface
+
+## Project Structure
 
 ```
-
 quiz-game/
-│
-├── database.py         # MySQL connection logic
-├── main.py             # Main program logic (register, login, play quiz)
-├── questions.py        # Quiz questions dictionary
-├── queries.sql         # SQL queries used in the app
-└── README.md           # You're reading this!
+├── database.py         # Database connection handling
+├── main.py            # Main program and menu logic
+├── questions.py       # Quiz questions and answers
+├── queries.sql        # SQL commands reference
+└── README.md          # This file
+```
 
-````
+## Requirements
 
----
+- Python 3.x
+- MySQL server
+- mysql-connector-python package
 
-## 🚀 Features
-
-- ✅ Register with username and password
-- 🔐 Login with authentication
-- 🧠 Play 10-question quiz (auto-randomized)
-- 🏆 Score is calculated based on correct answers
-- 💾 High score stored and updated in MySQL database
-
----
-
-## 🛠️ Setup Instructions
-
-### 1. Install Python 3
-
-Make sure Python 3 is installed. You can check with:
-
-```bash
-python --version
-````
-
-### 2. Install MySQL Connector for Python
-
-Install the required package using pip:
-
+Install the Python package:
 ```bash
 pip install mysql-connector-python
 ```
 
-### 3. Create a MySQL Database
+## Database Setup
 
-Start your MySQL server and create a new database:
+Create a MySQL database and table:
 
 ```sql
 CREATE DATABASE quizgame;
-```
 
-### 4. Create `users` Table
+USE quizgame;
 
-Inside your new database, run this SQL command:
-
-```sql
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255) NOT NULL,
@@ -69,50 +55,69 @@ CREATE TABLE users (
 );
 ```
 
-### 5. Update Database Credentials
-
-Open `database.py` and update the following values with your MySQL credentials:
-
+Update your database credentials in `database.py`:
 ```python
 conn = mysql.connector.connect(
     host="localhost",
-    user="your_mysql_username",
-    password="your_mysql_password",
+    user="your_username",
+    password="your_password", 
     database="quizgame"
 )
 ```
 
----
+## How to Run
 
-## 🎮 Run the Game
-
-Start the program using:
-
+Start the program:
 ```bash
 python main.py
 ```
 
-Follow the menu to register, login, and play the quiz.
+Follow the menu prompts to register, log in, and play the quiz.
+
+## How It Works
+
+The program has three main parts:
+- `main.py` handles the menu system and game flow
+- `database.py` manages MySQL connections and queries
+- `questions.py` contains the quiz questions as a dictionary
+
+When you play, it randomly selects 10 questions, tracks your score, and updates your high score in the database if you beat your previous best.
+
+## What I Learned
+
+- Connecting Python to MySQL databases
+- Basic SQL operations (CREATE, INSERT, SELECT, UPDATE)
+- User input validation and menu systems
+- Organizing code across multiple files
+- Basic authentication (though without proper password hashing)
+- Working with dictionaries and random selection
+
+## Known Issues
+
+- Passwords are stored in plain text (not secure)
+- No input sanitization for SQL injection prevention
+- Basic error handling
+- Simple CLI interface only
+
+## Possible Improvements
+
+Could add:
+- Password hashing for security
+- Better error handling and input validation
+- Web interface with Flask
+- Question categories or difficulty levels
+- Admin panel for managing questions
+- Better database security practices
+
+## Author
+
+**Evan William**  
+Version 1.0 (2025)
+
+Made this to practice database programming and learn how to build applications that store user data. It was helpful for understanding how desktop applications connect to databases and manage user sessions.
+
+First time working with MySQL in Python, so the code is pretty basic but functional for learning purposes.
 
 ---
 
-## 📝 Notes
-
-* High scores are stored per user.
-* All quiz questions and answers are stored in `questions.py`.
-* Database interaction uses raw SQL stored in `queries.sql`.
-
----
-
-## 📌 Future Improvements (Optional Ideas)
-
-* Add password hashing (e.g., using `bcrypt`)
-* Build a GUI or web version using Flask
-* Add categories or difficulty levels
-* Create an admin panel to add/edit questions
-
----
-
-## 👨‍💻 Developer  
-Created by Evan William (2025)  
-Version: 1.0
+*Learning project - for fun testing only*
