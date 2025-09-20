@@ -1,104 +1,125 @@
-# ⛏️ Mine-Script - Auto Miner  
+# Mine-Script - Auto Miner
 
-## 📜 Description
+A basic Minecraft mining bot that I made to automate the boring parts of mining. Uses simple image recognition to detect lava and avoid falling into it.
 
-**Mine-Script** is an auto-mining bot for Minecraft that uses image detection and simulated keypresses to automate forward mining. It detects **lava danger** in real-time, when spotted, the bot will **retreat** automatically to avoid damage.
----
+## What This Does
 
-## ⚙️ Requirements
+Basically, it makes your character walk forward and mine continuously. If it spots lava on the screen, it backs up automatically so you don't die. I built this because manual mining gets really tedious, especially when you're just looking for materials in straight tunnels.
 
-- Python **3.10+**
-- Minecraft in **windowed mode** (not fullscreen)
-- Required Python packages:
+It's nothing fancy - just holds down movement keys and clicks the mine button while scanning for danger.
+
+## Requirements
+
+- Python 3.10+
+- Minecraft (needs to be in windowed mode, not fullscreen)
+- These packages:
   - `pyautogui`
   - `pyfiglet`
 
-> 💡 Install dependencies:
+Install them:
 ```bash
 pip install pyautogui pyfiglet
-````
-
----
-
-## 📂 Configuration
-
-Before running the script:
-
-### 1. Update image paths in the script:
-
-```python
-LAVA_IMAGE = r"path_to_your_lava_image.png"
-START_IMAGE = r"path_to_your_start_button_image.png"
 ```
 
-### 2. Prepare your screenshots:
+## Setup
 
-#### Lava Image:
+You need a couple screenshots first:
 
-* Stand near lava in Minecraft.
-* Take a screenshot that clearly captures the **lava texture**.
-* Crop tightly around the lava and save as `lava.png`.
+### Lava Screenshot
+- Go to where there's lava in your world
+- Take a screenshot showing the lava texture clearly
+- Crop it down to just the lava part
+- Save as `lava.png`
 
-#### Start Button:
+### Start Button Screenshot  
+- Screenshot your Minecraft launcher or main menu
+- Crop just the Start/Play button
+- Save as `start_button.png`
 
-* Use your Minecraft launcher or menu with a visible **Start/Play** button.
-* Screenshot and crop only the **Start** button.
-* Save as `start_button.png`.
+### Update the Code
+Change these file paths in the script:
+```python
+LAVA_IMAGE = r"lava.png"
+START_IMAGE = r"start_button.png"
+```
 
-### 3. Set keybindings:
+Also make sure your mine key is set to `X` in Minecraft controls.
 
-* Make sure `X` is your **mine** key in Minecraft.
+## How to Use
 
----
-
-## 🛠️ How It Works
-
-1. Detects and clicks the **Start Game** button using image recognition.
-2. Starts mining by holding `W` (walk forward) and pressing `X` (mine).
-3. Mines for the number of **cycles** you specify.
-4. If lava is detected on screen, bot **retreats** using the `S` key.
-5. Stops automatically when all cycles complete or lava is detected.
-
----
-
-## ▶️ How To Run
-
-1. Launch Minecraft and go to your mining area.
-2. Run the script:
-
+1. Open Minecraft in windowed mode
+2. Go to your mining spot
+3. Run the script:
 ```bash
 python mine_script.py
 ```
+4. Tell it how many cycles to run
+5. Let it do its thing
 
-3. Enter how many cycles you want the bot to run.
-4. Sit back and enjoy automated mining!
+To stop it early:
+- Move mouse to screen corner (pyautogui failsafe)
+- Press Ctrl+C in terminal
 
-> ⛔ Stop anytime with:
+## How It Works
 
-* Moving your mouse to the corner of the screen (failsafe)
-* Pressing `Ctrl+C` in the terminal
+Pretty straightforward:
+1. Clicks the start button to get into game
+2. Holds W to walk forward
+3. Repeatedly presses X to mine
+4. Scans screen for lava every few seconds
+5. If it finds lava, hits S to back up
+6. Stops after your specified cycles or if lava detected
+
+## Important Stuff
+
+**Don't use this on multiplayer servers** - most servers ban automation/bots and you'll get kicked or banned.
+
+This is just for single-player worlds or testing on your own server. It's meant to be a fun experiment, not a serious mining tool.
+
+## Limitations
+
+- Only works in windowed mode
+- Image recognition can be flaky
+- Doesn't handle complex terrain well
+- Won't work if your screen resolution/graphics settings change
+- Pretty basic pathfinding (just goes forward)
+- Can get stuck on obstacles
+
+## Tips
+
+- Test with just 1-2 cycles first
+- Keep your graphics settings consistent
+- Don't have chat windows or menus open
+- Make sure there's decent lighting in your mining area
+- Start in a simple straight tunnel
+
+## Troubleshooting
+
+**Bot doesn't start**: Check if your start button screenshot matches what's on screen
+
+**Doesn't detect lava**: Try taking a clearer lava screenshot with better lighting
+
+**Gets stuck**: It's pretty dumb - clear obstacles from the path first
+
+**Moves weirdly**: Make sure Minecraft is the active window
+
+## Project Files
+
+```
+mine_script.py    # Main bot script
+lava.png         # Lava detection image
+start_button.png # Start button image
+```
+
+## Author
+
+**Evan William**  
+Version 1.0 (2025)
+
+It's a simple automation experiment - nothing too sophisticated but it saves some time on repetitive mining tasks. 
+
+Definitely has room for improvement, but it works well enough for basic mining. Feel free to modify it or build something better.
 
 ---
 
-## ⛔ Warnings
-
-* **Do NOT use** on multiplayer servers that **prohibit bots or automation**.
-* Always use responsibly and ethically.
-* This tool is intended for personal use, learning, and experimentation.
-* This tool is just for fun only, so it will not work 100%
-
----
-
-## 🧠 Pro Tips
-
-* Maintain consistent screen **brightness and resolution**.
-* Ensure no overlays (chat, tooltips, or menus) are blocking the lava or button.
-* For best results, **do not multitask** while the bot is running.
-* Test with a **short cycle** before letting it run longer.
-
----
-
-## 👨‍💻 Developer  
-Created by Evan William (2025)  
-Version: 1.0
-
+*For single-player use only. Don't get banned from servers.*
