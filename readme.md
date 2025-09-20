@@ -14,7 +14,7 @@ Everything from quick automation scripts to full-blown apps ends up here. Some s
 
 <div align="center">
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=800&color=58A6FF&center=true&vCenter=true&width=500&lines=Software+developer;Problem+solver;Always+learning+new+technologies;Building+innovative+solutions)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=800&color=58A6FF&center=true&vCenter=true&width=500&lines=Code+enthusiast;Problem+solver;Always+learning+new+technologies;Building+innovative+solutions)
 
 **building** • **learning** • **creating** • **exploring**
 
