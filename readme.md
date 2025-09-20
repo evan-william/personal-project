@@ -15,7 +15,7 @@ Everything from quick automation scripts to full-blown apps ends up here. Some s
 </div>
 
 ```
-🎯 experiments   •   💡 tools   •   🎮 games   •   🚀 ideas
+🔧 building   •   📚 learning   •   🎨 creating   •   💭 exploring
 ```
 
 <div align="center">
