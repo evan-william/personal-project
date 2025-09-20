@@ -1,7 +1,3 @@
-You're right, it does look awkward having the animated text above the section heading. It breaks the natural flow and makes the hierarchy confusing.
-
-Here's a cleaner version:
-
 ## 🔴 Advanced Projects
 
 These are the projects that **challenged me the most**. I've applied what I know to solve more **complex, practical problems** and started thinking more like a developer.
@@ -15,3 +11,4 @@ They're not quite **production-ready** yet, but they show how I'm improving and 
 </div>
 
 The animated text works better as a supporting element after the main content, not as a replacement for or precursor to the actual heading.
+
