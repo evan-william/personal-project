@@ -1,87 +1,68 @@
-# 📊 Breast Cancer Classification with Scikit-Learn
+# Breast Cancer Classification
 
-## 📜 Description
+A machine learning project comparing different classification algorithms on the Wisconsin Breast Cancer dataset to practice binary classification techniques.
 
-**Breast Cancer Classification** is a machine learning project built with **scikit-learn** that demonstrates binary classification techniques using the Wisconsin Breast Cancer dataset.
+## What This Project Does
 
-The goal is to practice and improve understanding of:
-- 🔬 Data preprocessing (train-test split, feature scaling)
-- 🤖 Training multiple ML models
-- 📈 Comparing performance using confusion matrices, classification reports, and accuracy metrics
+This is a straightforward classification exercise using the built-in breast cancer dataset from scikit-learn. I wanted to get hands-on experience with different ML algorithms and see how they perform on the same medical dataset.
 
-This project uses the **Breast Cancer Wisconsin dataset** (built into scikit-learn) to classify tumors as **benign** or **malignant**.
+The goal was to practice the full pipeline: data preprocessing, model training, and evaluation. It compares six different algorithms to see which ones work best for distinguishing between benign and malignant tumors.
 
-> **Note**: This project is for educational purposes and machine learning practice only.
+## Learning Goals
 
----
+- Practice data preprocessing and feature scaling
+- Train multiple classification models
+- Compare model performance using proper metrics
+- Understand confusion matrices and classification reports
+- Get familiar with scikit-learn's workflow
 
-## ⚙️ Requirements
+## Requirements
 
-- **Python 3.9+**
-- **Required Libraries**:
+- Python 3.9+
+- Standard ML libraries:
   - `numpy`
   - `pandas` 
   - `matplotlib`
   - `scikit-learn`
 
-### Installation
-
-Install all required dependencies with:
-
+Install with:
 ```bash
 pip install numpy pandas matplotlib scikit-learn
 ```
 
----
+## Dataset
 
-## 📂 Dataset
+Uses the Wisconsin Breast Cancer dataset that comes with scikit-learn. It has 569 samples with 30 features each, measuring things like cell size, texture, and shape. The target is binary: benign (0) or malignant (1).
 
-No external dataset required — scikit-learn provides the breast cancer dataset. The script automatically:
-- Loads the Wisconsin Breast Cancer dataset
-- Splits the dataset into training (80%) and testing (20%) sets
-- Standardizes features using `StandardScaler`
+No need to download anything - the script loads it automatically.
 
----
+## How It Works
 
-## 🛠️ How It Works
+Pretty standard ML pipeline:
 
-1. **Data Loading**: Loads the breast cancer dataset from scikit-learn
-2. **Data Splitting**: Divides data into training (80%) and testing (20%) sets
-3. **Feature Scaling**: Applies `StandardScaler` for feature normalization
-4. **Model Training**: Trains six different classification models:
-   - 🧑‍🤝‍🧑 K-Nearest Neighbors (KNN)
-   - 📈 Logistic Regression
-   - 🌳 Decision Tree
-   - 🌀 Support Vector Classifier (SVC)
-   - 🌲 Random Forest
-   - 🎲 Gaussian Naive Bayes
+1. Load the breast cancer dataset
+2. Split into training (80%) and testing (20%) sets
+3. Scale features using StandardScaler
+4. Train six different models:
+   - K-Nearest Neighbors
+   - Logistic Regression
+   - Decision Tree
+   - Support Vector Classifier
+   - Random Forest
+   - Gaussian Naive Bayes
+5. Evaluate each model with confusion matrices and classification reports
+6. Compare accuracies in a bar chart
 
-5. **Model Evaluation**: Evaluates each model using:
-   - Confusion Matrix
-   - Classification Report (precision, recall, F1-score)
-   - Accuracy Score
+## Running the Code
 
-6. **Visualization**: Creates a bar chart comparing all model accuracies
-
----
-
-## ▶️ How To Run
-
-1. Save the script as `breast_cancer_classification.py`
-2. Run in terminal:
-
+Save the script and run:
 ```bash
 python breast_cancer_classification.py
 ```
 
-The script will:
-- Print confusion matrices and classification reports for each model
-- Display accuracy scores
-- Show a comparative bar chart of all models
+It will print detailed results for each model and show a comparison chart at the end.
 
----
-
-## 📊 Example Output
+## Sample Output
 
 ```
 === Logistic Regression ===
@@ -91,21 +72,42 @@ Confusion Matrix:
 
 Classification Report:
               precision    recall  f1-score   support
-
            0       0.97      0.97      0.97        73
            1       0.95      0.95      0.95        41
-
     accuracy                           0.96       114
-   macro avg       0.96      0.96      0.96       114
-weighted avg       0.96      0.96      0.96       114
 
 Accuracy: 0.9649
 ```
 
-📌 The final bar chart visualization shows which model performs best on this dataset.
+The confusion matrix shows true negatives, false positives, false negatives, and true positives. The classification report breaks down precision, recall, and F1-score for each class.
+
+## What I Learned
+
+- Different algorithms perform surprisingly similarly on this dataset
+- Feature scaling makes a big difference for some models (like SVC and KNN)
+- Random Forest and Logistic Regression tend to perform well out of the box
+- Medical datasets often have good class separation, leading to high accuracy scores
+
+## Limitations
+
+This is a pretty clean, well-known dataset, so results are probably better than you'd see with messier real-world data. Also, I'm just using default hyperparameters - tuning them would likely improve performance.
+
+The comparison is fairly basic too - just accuracy scores. A more thorough analysis would look at precision/recall tradeoffs, especially for medical applications where false negatives are costly.
+
+## Possible Improvements
+
+- Try hyperparameter tuning
+- Feature importance analysis
+
+## Author
+
+**Evan William**  
+Version 1.0 (2025)
+
+Built this to practice classification algorithms and get comfortable with scikit-learn. Medical datasets are interesting to work with because the stakes feel more real.
+
+The breast cancer dataset is a classic in ML education - good for learning the basics before moving on to messier, more complex problems.
 
 ---
 
-## 👨‍💻 Developer  
-Created by Evan William (2025)  
-Version: 1.0
+*Educational project only for my own test*
