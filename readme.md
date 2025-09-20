@@ -14,10 +14,10 @@ Everything from quick automation scripts to full-blown apps ends up here. Some s
 
 <br/>
 
-**🔧 building** • **📚 learning** • **🎨 creating** • **💭 exploring**
+**building** • **learning** • **creating** • **exploring**
 
 <br/>
 
-**Thanks for stopping by!** ⚡
+**Thanks for stopping by!**
 
 </div>
