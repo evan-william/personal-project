@@ -99,8 +99,6 @@ Database integration tracks game outcomes and provides persistent statistics acr
 Could add:
 * Web-based interface with HTML/CSS frontend
 * Online multiplayer capabilities
-* Different board sizes (4x4, 5x5) for variety
-* Tournament mode with multiple rounds
 * AI personality customization options
 * Advanced statistics and performance analytics
 * Save game states for resuming later
@@ -114,3 +112,4 @@ Created this to dive deep into game AI programming and understand how unbeatable
 This was my first implementation of the minimax algorithm and helped me understand recursive thinking in AI programming.
 
 *Learning project - demonstrates AI algorithm implementation and multi-technology integration in game development.*
+
