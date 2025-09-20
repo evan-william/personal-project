@@ -1,6 +1,3 @@
-## 🌟 Complete Projects
-
-This folder contains the more complete and refined projects. The ones I’d be comfortable sharing or using as part of a portfolio.
-
-They reflect what I’ve learned so far, and I’ll keep adding more as I continue to grow as a developer.
-
+Complete Projects
+These are the projects I've taken from initial concept all the way through to working software. Each one represents a complete development cycle - planning, building, testing, and refining until I had something I was genuinely proud to share.
+They showcase the technical skills I've developed and demonstrate my ability to see ideas through to completion. More importantly, they reflect the lessons learned from actually finishing what I started, which is often the hardest part of any project.
