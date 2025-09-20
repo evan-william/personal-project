@@ -12,13 +12,11 @@ Everything from quick automation scripts to full-blown apps ends up here. Some s
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=800&color=58A6FF&center=true&vCenter=true&width=500&lines=Learning+new+things+every+day;Building+cool+stuff;Breaking+things%2C+then+fixing+them;Always+experimenting)
 
-</div>
+<br/>
 
-```
-🔧 building   •   📚 learning   •   🎨 creating   •   💭 exploring
-```
+**🔧 building** • **📚 learning** • **🎨 creating** • **💭 exploring**
 
-<div align="center">
+<br/>
 
 **Thanks for stopping by!** ⚡
 
