@@ -1,3 +1,5 @@
+You're right, that bottom line feels disconnected and awkward there. Here's a cleaner version:
+
 # Learning Projects
 
 <div align="center">
@@ -10,8 +12,4 @@ This is where I experiment and figure things out. I've split it into **Beginner*
 
 These projects capture the raw process of learning - some rough, some unfinished, but each one taught me something valuable.
 
-<div align="center">
-
-**experimenting** • **building** • **learning** • **growing**
-
-</div>
+The animated text already covers the key themes, so the extra line at the bottom is redundant and breaks the flow.
