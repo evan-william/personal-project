@@ -1,6 +1,6 @@
 # 👋 Hey there!
 
-I'm **Evan**, and this is my coding playground.
+I'm **Evan**, and this is my coding journey.
 
 Everything from quick automation scripts to full-blown apps ends up here. Some stuff solves real problems, some is just me messing around with new tech I want to learn.
 
