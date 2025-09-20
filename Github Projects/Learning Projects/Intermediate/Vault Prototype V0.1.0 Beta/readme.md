@@ -1,113 +1,115 @@
-# 🏦 Vault - The Commitment Marketplace
+# Vault - The Commitment Marketplace
 
-## 📜 Description
+A command-line prototype application that creates accountability through financial stakes - put your money where your goals are.
 
-**Vault** is a command-line application built on a powerful idea: turning intentions into action through real-world consequences. It's a commitment marketplace where you stake your own money on achieving your personal and professional goals.
+## What It Does
 
--   **Set a Goal**: Define a task you want to accomplish.
--   **Stake Your Cash**: Put your own money on the line.
--   **Appoint a Witness**: Assign a trusted friend to verify the outcome.
--   **Succeed or Donate**: If you succeed, you get your money back. If you fail, the stake is automatically moved to your donation total, intended for a charity of your witness's choosing.
+This is an early prototype for a startup idea I'm exploring around commitment accountability. The concept is simple: you set a personal goal, stake real money on completing it, assign a trusted witness, and if you fail to meet your deadline, the money automatically goes toward a charitable donation.
 
-It’s not just a to-do list; it’s a psychological tool designed to create powerful accountability.
+Built this prototype to test the core psychological mechanics of financial accountability and see how the commitment system would work in practice before developing a full application.
 
----
+## The Concept
 
-## ⚠️ Important: Early Prototype Notice
+* Set a personal or professional goal with a specific deadline
+* Stake your own money on achieving that goal
+* Designate a trusted friend or colleague as your witness
+* If you succeed, you get your money back
+* If you fail, the stake moves to your donation total for charity
 
-This program is a **very early prototype** created for fun and demonstration purposes. It is **not the final vision** for the Vault application and currently has known limitations and bugs.
+It's designed to leverage loss aversion psychology - people hate losing money more than they like gaining it, which creates powerful motivation to follow through on commitments.
 
-Think of this as a proof-of-concept for the core logic. It will be upgraded and updated soon!
+## Features
 
----
+* User registration and secure login system
+* Goal creation with financial stakes
+* Automatic deadline monitoring and failure processing
+* Balance tracking and donation totals
+* MySQL database for persistent data storage
+* Password hashing with bcrypt for security
 
-## ⚙️ Requirements
+## Project Structure
 
--   Python **3.8+**
--   A running **MySQL Server** instance
--   Python Packages:
-    -   `mysql-connector-python`
-    -   `bcrypt`
-    -   `pyfiglet`
+```
+vault-prototype/
+├── app.py          # Main application logic and CLI interface
+└── README.md       # This file
+```
 
-> 💡 Install required packages using:
-> ```bash
-> pip install mysql-connector-python bcrypt pyfiglet
-> ```
+## Requirements
 
----
+* Python 3.8+
+* MySQL server instance
+* Required packages:
+  - mysql-connector-python
+  - bcrypt
+  - pyfiglet
 
-## 📂 Configuration & Setup
+Install dependencies:
 
-There is no configuration file to edit. The application is designed to set itself up automatically.
+```bash
+pip install mysql-connector-python bcrypt pyfiglet
+```
 
-1.  **MySQL Server**: Ensure your MySQL server is running before you start the application.
-2.  **Database Credentials**: When you run the script for the first time, you will be prompted to enter your MySQL credentials (host, user, and password).
-3.  **Automatic Setup**: The script will automatically:
-    -   Create a database named `VaultPrototype` if it doesn't exist.
-    -   Create the necessary tables (`User`, `Sessions`).
+## Setup
 
----
+The application handles setup automatically:
 
-## 🛠️ How It Works
+1. Ensure MySQL server is running
+2. Run the script - it will prompt for your database credentials
+3. The app creates the `VaultPrototype` database and necessary tables automatically
+4. Register a new account or login to start testing
 
-1.  **Connects to Database**: The app first establishes a connection to your MySQL server.
-2.  **User Authentication**: You are prompted to either **Register** a new account or **Login** to an existing one. Passwords are securely hashed using `bcrypt`.
-3.  **Main Menu**: Once logged in, you can see your current balance and total amount donated from failed commitments.
-4.  **Create a Commitment**: Define your task, the amount to stake, the deadline, your witness, and the charity to donate to upon failure. The staked amount is immediately deducted from your balance.
-5.  **Automatic Consequence Engine**: Every time you return to the main menu, the app automatically checks for any pending commitments that have passed their deadline.
-6.  **Failure Processing**: If a deadline has passed, the commitment is marked as `failed`, and the staked funds are moved to your total donation tracker.
+## How to Run
 
----
-
-## ▶️ How To Run
-
-1.  Make sure your **MySQL Server is running**.
-2.  Open your terminal or command prompt.
-3.  Navigate to the project directory.
-4.  Run the main application script:
+Start the prototype:
 
 ```bash
 python app.py
-````
+```
 
-5.  Follow the on-screen prompts:
-      - Enter your database credentials first.
-      - Choose to **Login** or **Register**.
-      - Use the main menu to navigate the application.
+Follow the prompts to connect to your database, create an account, and start testing commitment scenarios.
 
------
+## How It Works
 
-## ⛔ Important Notes
+The application connects to MySQL, manages user authentication, and tracks commitments with automatic deadline checking. When you return to the main menu, it automatically processes any commitments that have passed their deadline and moves failed stakes to the donation tracker.
 
-  - This is a **command-line only** application.
-  - The "witness" and "charity" are currently just text fields for tracking. There is no notification or integration system.
-  - The application is intended for **local testing and demonstration only**.
-  - Always double-check your inputs, as there is minimal input validation.
+This lets me test the core accountability loop and see how the financial consequence system feels in practice.
 
------
+## What I Learned
 
-## 🧠 Pro Tips
+* Database design for commitment tracking systems
+* User authentication and password security
+* Automatic background processing for deadline monitoring
+* Command-line interface design for complex workflows
+* Financial accountability psychology in application design
+* Prototype development for validating startup concepts
 
-  - For testing, you can set deadlines for just a few minutes into the future to see the automatic failure processing work. (Note: The check is by `date`, not `time`, so it will process after midnight).
-  - Use a dedicated MySQL user with limited privileges for better security.
-  - Keep the terminal window visible to see real-time status updates.
+## Current Limitations
 
------
+* Command-line interface only (testing core logic first)
+* No actual payment processing or charity integration
+* Witness notifications are just text fields for now
+* Basic input validation and error handling
+* Date-based deadline checking (not time-specific)
+* Local testing environment only
 
-## 🧰 Troubleshooting
+## Next Steps for Full Application
 
-| Problem                                    | Solution                                                                                                                              |
-| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
-| ❓ Can't connect to database               | Double-check that your MySQL server is running and that your host, user, and password credentials are correct.                        |
-| ❌ `Commands out of sync` or other DB errors | The latest version uses a connection pool and atomic transactions to prevent this, but if it occurs, restarting the app is a safe bet. |
-| 📨 Data not updating                       | The main user dashboard (balance, donations) refreshes every time the main menu is displayed.                                         |
+The real version would include:
+* Web-based interface with mobile responsiveness
+* Integrated payment processing for real stakes
+* Automated witness notifications and verification
+* Direct charity donation processing
+* Social features and community challenges
+* Advanced goal tracking and analytics
+* API for third-party integrations
 
------
+## Author
 
-## 👨‍💻 Developer  
-Created by Evan William (2025)  
-Version: 0.1.0 (Beta Prototype)
+**Evan William** - Version 0.1.0 (2025)
 
+Created this prototype to validate my startup idea around commitment accountability systems. It's only for testing the core psychological mechanics and understanding how users might interact with financial stake systems.
 
+This is purely a proof-of-concept to explore the business model and user experience before investing in full development.
 
+*Prototype only - built for concept validation and early testing of the commitment marketplace idea.*
