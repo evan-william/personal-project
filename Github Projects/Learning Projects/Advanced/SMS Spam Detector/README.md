@@ -1,7 +1,3 @@
-Of course. Based on your project and the example you provided, here is a high-quality README file for your Spam Detector.
-
------
-
 # SMS Spam Detector
 
 A classic machine learning project for text classification, built to distinguish spam messages from legitimate ones ("ham") using Python and scikit-learn.
@@ -159,5 +155,6 @@ This project was a fantastic exercise in fundamental NLP and machine learning pr
 If you have any feedback or suggestions, feel free to open an issue or pull request\!
 
 -----
+
 
 *This project is for educational purposes. Feel free to fork, modify, or use it for your own learning.*
