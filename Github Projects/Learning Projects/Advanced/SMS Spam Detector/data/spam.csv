@@ -1,6 +1,3 @@
-Of course. Here is a much larger set of data points in the same CSV format, with a mix of "ham" and "spam" messages.
-
-```csv
 label,message
 "ham","Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore wat..."
 "ham","Ok lar... Joking wif u oni..."
@@ -206,3 +203,4 @@ label,message
 "ham","That was a close call!"
 "spam","Your request for a new job has been received. A recruiter will contact you shortly."
 "spam",You recieved a direct deposit of $13963.99 + No Deposit Requried"
+
